@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Body</title>
+    <link rel="shortcut icon" href="./pic/pic.png">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+</head>
+<body class="mdui-theme-layout-auto">
+    <div class="mdui-card">
+      <div class="mdui-card-media" >
+        <img src="" height=100% id="pic"/>
+        <div class="mdui-card-media-covered">
+          <div class="mdui-card-primary" >
+            <div class="mdui-card-primary-title" id="sentence"></div>
+            <div  id="quetos"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <script src="./javascript.js"></script>
+</body>
+<script>
+   
+    var pic=Math.floor(Math.random()*21);
+   
+    // document.getElementById('pic').innerHTML = `<img src="./pic/${pic}.webp" height=100% />`;
+    // document.getElementById('sentence').innerHTML = ` <div class="mdui-card-primary-title">${sentence[pic]}</div>`;
+   console.log(pic);  
+ var url = "./pic/"+pic+".webp";
+ document.getElementById('pic').src = url;
+
+
+ 
+
+</script>
+</html>
